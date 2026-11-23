@@ -1,4 +1,3 @@
-
 const Entry = require("../models/Entry");
 
 // GET all public entries
