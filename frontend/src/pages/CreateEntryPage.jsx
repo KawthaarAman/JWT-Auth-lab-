@@ -42,7 +42,7 @@ function CreateEntryPage() {
       {error && <p>{error}</p>}
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Title: </label>
         <input
           id="title"
           type="text"
@@ -53,7 +53,7 @@ function CreateEntryPage() {
           maxLength="100"
         />
 
-        <label htmlFor="entryBody">Entry Body</label>
+        <label htmlFor="entryBody"> Entry Body: </label>
         <textarea
           id="entryBody"
           name="entryBody"
@@ -69,10 +69,10 @@ function CreateEntryPage() {
             checked={formData.isPublic}
             onChange={handleChange}
           />
-          Make this entry public
+          Make this entry public 
         </label>
-
-        <button type="submit">Create Entry</button>
+      
+        <button type="submit"> Create Entry</button>
       </form>
     </div>
   );

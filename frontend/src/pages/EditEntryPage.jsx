@@ -70,7 +70,7 @@ function EditEntryPage() {
       {error && <p>{error}</p>}
 
       <form onSubmit={handleSubmit}>
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Title: </label>
         <input
           id="title"
           type="text"
@@ -81,7 +81,7 @@ function EditEntryPage() {
           maxLength="100"
         />
 
-        <label htmlFor="entryBody">Entry Body</label>
+        <label htmlFor="entryBody"> Entry Body: </label>
         <textarea
           id="entryBody"
           name="entryBody"
@@ -100,7 +100,7 @@ function EditEntryPage() {
           Make this entry public
         </label>
 
-        <button type="submit">Save Changes</button>
+        <button type="submit"> Save Changes</button>
 
         <button
           type="button"

@@ -11,9 +11,9 @@ function Navbar() {
       {user ? (
         <>
           <Link to="/dashboard">Dashboard</Link>
-          <Link to="/entries">Public Entries</Link>
-          <Link to="/my-entries">My Entries</Link>
           <Link to="/entries/create">Create Entry</Link>
+          <Link to="/my-entries">My Entries</Link>
+          <Link to="/entries">Public Entries</Link>
           <button onClick={logout}>Sign Out</button>
         </>
       ) : (
